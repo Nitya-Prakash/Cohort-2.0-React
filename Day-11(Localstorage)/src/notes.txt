@@ -1,0 +1,24 @@
+// localStorage.clear() - to clean localStorage
+// localStorage.setItem("key", "value") - to add a new item or overwriting existing ones
+// localStorage.getItem("key") - to get any item
+// localStorage.removeItem("key") - to remove any item
+
+// localStorage kisi bhi object ya array ko directly store nhi karta hai, wo usko as a string format mein save karta hai, so to overcome this problem 1st you have to stringify the data while setting the item in localstorage and to get the data from the localstorage you have to parse the data through JSON. for ex -
+
+// const obj = {
+//   name: "Nitya",
+//   age: 21,
+//   place: "Bhubaneswar"
+// }
+
+// localStorage.setItem("obj", obj) // ❌
+// localStorage.setItem("obj", JSON.stringify(obj)) // ✅
+
+// const newObj = localStorage.getItem("obj")
+// console.log(JSON.parse(newObj))
+
+// Same goes for the array also ..
+
+// sessionStorage - 
+// sessionStorage tab tak store hoke rehta hai, jab tak aap wo browser ya tab ko close na kardo ...
+// sessionStorage.setItem("name", "nitya")

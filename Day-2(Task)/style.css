@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#root {
+    height: 100%;
+    width: 100%;
+    background-color: #F8F8F8;
+}
+
+.nav {
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftNav {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo {
+    width: 3vw;
+    cursor: pointer;
+}
+
+.navLinks {
+    text-decoration: none;
+    color: #222222;
+    font-size: 1.1rem;
+}
+
+.rightNav {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+    padding: 0 2vw;
+}
+
+.navRightLinks {
+    color: #222222;
+    font-size: 1.1rem;
+}
+
+.rightNav i {
+    font-size: 1.3rem;
+}
+
+.rightNav .menu {
+    display: none;
+}
+
+.hero {
+    height: 88vh;
+    width: 100%;
+    display: flex;
+}
+
+.leftDiv {
+    height: 100%;
+    width: 40%;
+    padding: 2vw 0vw 0vw 2vw;
+    display: flex;
+    justify-content: space-between;
+    gap: 1vw;
+}
+
+.leftDiv1 {
+    height: 100%;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.occupation {
+    height: 27%;
+    font-size: 1.2rem;
+    color: #959595;
+    white-space: nowrap;
+    transform: rotate(-90deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    height: 60%;
+    width: 2%;
+    background-color: #959595;
+}
+
+.year {
+    height: 10%;
+    font-size: 1.2rem;
+    color: #959595;
+    white-space: nowrap;
+    transform: rotate(-90deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftDiv2 {
+    height: 100%;
+    width: 80%;
+}
+
+.top {
+    height: 20%;
+    width: 100%;
+    display: flex;
+}
+
+.topSections {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.headingH1 {
+    font-size: 3rem;
+    font-weight: 200;
+    color: #222222;
+}
+
+.headingH3 {
+    font-size: .9rem;
+    font-weight: 500;
+    color: #222222;
+}
+
+.middle {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+.middleH1 {
+    font-size: 11rem;
+    font-weight: 300;
+    color: #222222;
+}
+
+.middleH3 {
+    font-size: 1.9rem;
+    font-weight: 200;
+    color: #222222;
+}
+
+.btm {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    padding-bottom: 5px;
+}
+
+.btmH3 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #222222;
+}
+
+.rightDiv {
+    height: 100%;
+    width: 60%;
+    background-color: #F8F8F8;
+}
+
+.heroImg {
+    width: 95%;
+    object-position: top;
+}
+
+@media (max-width: 700px) {
+
+    .nav {
+        height: 9vh;
+        padding: 0 2vw;
+    }
+
+    .leftNav {
+        align-items: center;
+        justify-content: start;
+    }
+
+    .logo {
+        width: 30%;
+    }
+
+    .navLinks {
+        display: none;
+    }
+
+    .rightNav {
+        padding: 0 0vw;
+    }
+
+    .navRightLinks {
+        display: none;
+    }
+
+    .rightNav i {
+        display: none;
+    }
+
+    .rightNav .menu {
+        display: block;
+        font-size: 2rem;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .leftDiv {
+        height: 60%;
+        width: 100%;
+        padding: 3vw;
+        flex-direction: column;
+        gap: 2vw;
+    }
+
+    .leftDiv1 {
+        height: 10%;
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .occupation {
+        font-size: 1rem;
+        transform: rotate(0deg);
+    }
+
+    .line {
+        height: 2%;
+        width: 50%;
+    }
+
+    .year {
+        font-size: 1rem;
+        transform: rotate(0deg);
+    }
+
+    .leftDiv2 {
+        width: 100%;
+    }
+
+    .headingH1 {
+        font-size: 2rem;
+    }
+
+    .headingH3 {
+        font-size: .8rem;
+    }
+
+    .middleH1 {
+        font-size: 7rem;
+    }
+
+    .middleH3 {
+        font-size: 1.4rem;
+    }
+
+    .btm {
+        justify-content: end;
+    }
+
+    .btmH3 {
+        font-size: .9rem;
+    }
+
+    .rightDiv {
+        height: 40%;
+        width: 100%;
+    }
+
+    .heroImg {
+        width: 100%;
+        background-color: #F8F8F8;
+    }
+}

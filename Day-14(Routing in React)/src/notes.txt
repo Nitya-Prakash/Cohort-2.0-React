@@ -1,0 +1,14 @@
+React-Router-Dom
+
+- install react-router-dom
+- wrap <App /> with BrowserRouter in main.jsx file
+- make <Routes> then inside that make <Route />, give path and element to that Route
+
+- We can use nested routing as well means a route inside another route, like this - /products/men
+- For this we can use Route as a normal div (not a self closing div). Inside that we can use another <Route />, but here the path will be only a name (write without slash(/)). Same goes for <Link /> as well. This Link tag will better than <a> tag because it does not reload the page when redirecting. It will only change the required things. If you are using nested routing then in Link tag also the route name should be only written in normal (without using any slash (/)).
+- And to showcase the component inside that parent component you have to use <Outlet /> function.
+
+- Dynamic routing means anything after "/", like ids, numbers etc.... For that we use (:) symbol. for ex - /products/jeans/:id . Here id can be anything. id can be the model number or the poduct id. As these type of value changes for every other product, we can not make it static. So we use like this.
+- And for recieving that product id or whatever written in the url in place of (:id), we use useParams() hook to recieve that info. It gives the output in an object form
+
+- To make not found page use (*) in routes. For which whenever any one try to access a route which is not created it will give him a not found page.
