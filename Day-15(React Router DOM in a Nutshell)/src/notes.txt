@@ -1,0 +1,1 @@
+There is a tag called NavLink. It works like Link tag but you can add styles and customize it.
