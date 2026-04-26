@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+.cardDesc {
+    padding: 10px;
+    position: absolute;
+    bottom: -100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.677), gray);
+    color: white;
+    font-size: small;
+    transition: all ease .2s;
+    cursor: default;
+}
+
+.card:hover .cardDesc {
+    bottom: 0%;
+}
